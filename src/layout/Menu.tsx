@@ -6,7 +6,7 @@ import { Link } from "@chakra-ui/react";
 
 const CMenu = () => {
   return (
-    <Box w="350px" h="80vh" p={4} overflowY="scroll">
+    <Box h="80vh" p={4} overflowY="scroll" pos="fixed" w="260px">
       <HStack>
         <Link
           as={ReachLink}
@@ -25,6 +25,7 @@ const CMenu = () => {
           Home
         </Link>
       </HStack>
+
       <HStack>
         <Link
           as={ReachLink}
@@ -42,23 +43,7 @@ const CMenu = () => {
           Authorization Code
         </Link>
       </HStack>
-      <HStack>
-        <Link
-          as={ReachLink}
-          to="/userpassword"
-          rounded="lg"
-          fontWeight="bold"
-          color="#1A202C"
-          py={1}
-          px={2}
-          mt={3}
-          w="100%"
-          _hover={{ textDecor: "none" }}
-          _focus={{ outline: "none" }}
-        >
-          User Password
-        </Link>
-      </HStack>
+
       <HStack>
         <Link
           as={ReachLink}
@@ -76,6 +61,25 @@ const CMenu = () => {
           Implicit
         </Link>
       </HStack>
+
+      <HStack>
+        <Link
+          as={ReachLink}
+          to="/userpassword"
+          rounded="lg"
+          fontWeight="bold"
+          color="#1A202C"
+          py={1}
+          px={2}
+          mt={3}
+          w="100%"
+          _hover={{ textDecor: "none" }}
+          _focus={{ outline: "none" }}
+        >
+          User Password
+        </Link>
+      </HStack>
+
       <HStack>
         <Link
           as={ReachLink}
